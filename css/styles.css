@@ -145,9 +145,17 @@ body {
 
 
 .header-section {
-    background: #2e2f42;
+    background-color: #2e2f42;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+     url(../images/background-firstsec.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    margin: 0 auto;
+   
     
 }
 
@@ -217,6 +225,20 @@ body {
 }
 
 
+.feature-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    background-color: #F4F4FD;
+}
+
+
+
+
 .team-section {
     background: #f4f4fd;
 }
@@ -254,6 +276,7 @@ body {
 }
 .position {
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-list,
@@ -276,19 +299,46 @@ body {
 .portfolio-list > .list-items-box {
     flex-basis: calc((100% - 48px) / 3);
 }
+.portfolio-list>.list-items-box:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+     0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08)
+    ;}
 .team-list>.list-items-box {
     background-color: white;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+     0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 
 .team-cardinfo {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 .portfolio-cardinfo {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 24px;
+}
+
+.social-links .link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+
+}
+.link-icon .icon {
+    fill: #f4f4fd;
 }
 
 
@@ -297,8 +347,7 @@ body {
 
 .footer-section {
     background-color: #2e2f42;
-    padding: 100px 0 100px 0;
-    
+    padding: 100px 0 100px 0;  
 }
 
 .footer-section .navbar-logo {
@@ -312,10 +361,27 @@ body {
 
 .slogan {
     color: #f4f4fd;
-    letter-spacing: 0.02em;
-    
-    
+    letter-spacing: 0.02em; 
 }
 
+.footer-section .container {
+    display: flex;
+}
+
+.slogan-box {
+    margin-right: 120px;
+}
+
+.social-links-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan.social-title {
+    
+    font-weight: 500;
+    font-size: 16px; 
+    margin-bottom: 16px;   
+}
 
 
